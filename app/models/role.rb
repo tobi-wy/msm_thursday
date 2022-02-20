@@ -2,7 +2,7 @@ class Role < ApplicationRecord
   # Direct associations
 
   belongs_to :actor,
-             :counter_cache => true
+             counter_cache: true
 
   belongs_to :movie
 
@@ -15,5 +15,4 @@ class Role < ApplicationRecord
   def to_s
     movie.to_s
   end
-
 end
